@@ -4,10 +4,28 @@ import Secondcomponent from './Secondcomponent';
 
 
 export default class Componentone extends Component {
+
+  getData=(param)=>{
+    console.log("param",param);
+}
+constructor(){
+  super();
+  this.state={
+    name:"rajith",
+    id:45
+  }
+  console.log("constructor");
+}
+
+componentDidMount(){
+  console.log("componentdidmount");
+}
+componentDidUpdate(){
+  console.log("componentdidupdate");
+}
   render() {
-    getData=(param)=>{
-        console.log("param",param);
-    }
+    
+   
     return (
       <div>
         hi{this.props.name}

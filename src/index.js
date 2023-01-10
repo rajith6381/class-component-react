@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Firstclass from './Firstclass.js';
 import Componentone from './Componentone';
-
+import ParentFun from './ParentFun';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <App />
+    <ParentFun/>
   </React.StrictMode>
   
 );
